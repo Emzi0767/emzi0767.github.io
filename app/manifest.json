@@ -1,0 +1,19 @@
+{
+    "onPostLoad": "./app/app.post-load.js",
+    "onPreLoad": "./app/app.pre-load.js",
+    "css": [
+        "./app/app-root/app-root.style.css"
+    ],
+    "js": [
+        "https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js",
+        "https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.min.js",
+
+        "./app/landing/landing.module.js",
+        "./app/app-root/app-root.module.js",
+
+        "./app/landing/landing.component.js",
+        "./app/app-root/app-root.component.js",
+
+        "./app/app.js"
+    ]
+}

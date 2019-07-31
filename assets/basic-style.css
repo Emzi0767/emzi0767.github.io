@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Source+Code+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%; height: 100%;
+    margin: 0; padding: 0;
+
+    background: #333; color: #ddd;
+
+    font: 12pt 'Noto Sans','Helvetica','Arial',sans-serif;
+    font-weight: 400;
+}
+
+app-root {
+    width: 100%; height: 100%;
+    margin: 0; padding: 0;
+
+    display: table;
+}
+
+app-root > div.loading {
+    width: 100%; height: 100%;
+    margin: 0; padding: 0;
+
+    display: table-cell;
+
+    vertical-align: middle;
+    text-align: center;
+    
+    font-size: 72pt;
+    font-weight: 700;
+}

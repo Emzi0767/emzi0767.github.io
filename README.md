@@ -1,3 +1,2 @@
-#Emzi0767's GitHub page
-
-This is just my personal GitHub page, where I list things I do.
+# Emzi0767's Website
+This is my personal website.
