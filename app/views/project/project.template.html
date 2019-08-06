@@ -1,0 +1,19 @@
+<div class="image">
+    <img src="{{ $ctrl.project.image }}" alt="{{ $ctrl.project.name }}" class="project-logo">
+</div>
+
+<h1>{{ $ctrl.project.name }}</h1>
+
+<p ng-repeat="line in $ctrl.project.description">
+    {{ line }}
+</p>
+
+<p ng-repeat="line in $ctrl.project.details">
+    {{ line }}
+</p>
+
+<div class="links">
+    <a href="{{ $ctrl.project.source }}" alt="Source code of {{ $ctrl.project.source }}" title="Source code of {{ $ctrl.project.source }}" ng-if="$ctrl.project.source" target="_blank">Source code</a>
+    <a href="{{ $ctrl.project.docs }}" alt="Documentation for {{ $ctrl.project.source }}" title="Documentation for {{ $ctrl.project.source }}" ng-if="$ctrl.project.docs" target="_blank">Documentation</a>
+    <a href="{{ link.url }}" alt="{{ link.name }}" title="{{ link.name }}" ng-repeat="link in $ctrl.project.otherLinks" target="_blank">{{ link.name }}</a>
+</div>

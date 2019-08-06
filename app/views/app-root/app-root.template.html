@@ -1,0 +1,54 @@
+<div class="root-navbar">
+    <div class="inner">
+        <div class="title-block">
+            <img src="assets/og-image.jpg" alt="Emzi's Personal Website" class="title-image">
+            Emzi's Personal Website
+        </div>
+        <div class="nav-block">
+            <a href="#!/" title="Landing page" alt="Landing page" class="{{ $ctrl.tabId === 'landing' ? 'current' : '' }}">Landing</a><!-- 
+            --><a href="#!/projects" title="Projects" alt="Projects" class="{{ $ctrl.tabId === 'projects' ? 'current' : '' }}">Projects</a><!-- 
+            --><a href="#!/discord" title="Discord bots" alt="Discord bots" class="{{ $ctrl.tabId === 'discord' ? 'current' : '' }}">Discord</a><!-- 
+            --><a href="#!/about" title="About me" alt="About me" class="{{ $ctrl.tabId === 'about' ? 'current' : '' }}">About me</a>
+        </div>
+    </div>
+</div>
+
+<div class="root-content">
+    <div class="inner {{ $ctrl.rootClassName }}" ng-view></div>
+</div>
+
+<div class="root-footer">
+    <div class="inner">
+        <div class="c3">
+            <span>Be sure to check the links on the right. If you feel like supporting me, you can do so through my Patreon. Any amount is appreciated. I also accept tips in cryptocurrencies.</span>
+            <ul class="list-unstyled">
+                <li>
+                    Ethereum<br>
+                    <strong>{{ $ctrl.crypto.ethereum }}</strong>
+                </li>
+
+                <li>
+                    Bitcoin<br>
+                    <strong>{{ $ctrl.crypto.bitcoin }}</strong>
+                </li>
+
+                <li>
+                    Litecoin<br>
+                    <strong>{{ $ctrl.crypto.litecoin }}</strong>
+                </li>
+            </ul>
+        </div><!--
+        --><div class="c1">
+            <span>Also check out</span>
+            <ul class="list-unstyled">
+                <li><a target="_blank" href="https://github.com/Emzi0767">My GitHub</a></li>
+                <li><a target="_blank" href="https://paypal.me/Emzi0767">My PayPal</a></li>
+                <li><a target="_blank" href="https://patreon.com/emzi0767">My Patreon</a></li>
+                <li><a target="_blank" href="https://discord.gg/rGKrJDR">My Discord server</a></li>
+                <li><a target="_blank" href="https://github.com/Emzi0767/emzi0767.github.io">Source code of this website</a></li>
+            </ul>
+        </div>
+
+        <div class="small">&copy; 2019 by Emzi0767</div>
+    </div>
+</div>

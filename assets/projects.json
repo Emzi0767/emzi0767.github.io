@@ -1,0 +1,104 @@
+{
+    "heroProjects": [
+        {
+            "id": "clyde-net",
+            "name": "Clyde.NET",
+            "image": "./assets/projects/clyde-net.png",
+            "description": [
+                "Clyde.NET is an unofficial Discord API wrapper for .NET Core. It aims to provide a rich feature set, and a different approach to making API wrappers than both DSharpPlus and Discord.NET.",
+                "The library is in continuous development, and I'm always looking for ways to improve it. I want to provide a powerful, yet flexible Discord API wrapper for small and large applications alike."
+            ],
+            "details": [
+                "My aim is to provide a library that doesn't provide a low entry bar, but is better coupled with Dependency Injection and various components of the .NET ecosystem, very modular, and very customizable. The end goal is providing a flexible, yet powerful Discord API wrapper for .NET Core, with possible .NET Standard and .NETFX versions later down the line, for small and large bots and applications alike. While the library is continuously in development, I always accept contributions, and feedback."
+            ],
+            "docs": "https://clyde-net.emzi0767.com/",
+            "source": "https://github.com/Clyde-NET/Clyde.NET",
+            "otherLinks": []
+        },
+        {
+            "id": "slimget",
+            "name": "SlimGet",
+            "image": "./assets/projects/slimget.png",
+            "description": [
+                "SlimGet is a lightweight implementation of a NuGet and symbol server, powered by ASP.NET Core 2.2, designed to be ran in Docker.",
+                "The project was born out of need for a NuGet feed for CI artifacts of my projects, after my usual go-to provider ceased responding to all my support emails, and broke my builds in the process."
+            ],
+            "docs": null,
+            "source": "https://github.com/Emzi0767/SlimGet",
+            "otherLinks": [
+                {
+                    "name": "Live instance",
+                    "url": "https://nuget.emzi0767.com/"
+                }
+            ]
+        },
+        {
+            "id": "dsharpplus",
+            "name": "DSharpPlus",
+            "image": "./assets/projects/dsharpplus.png",
+            "description": [
+                "DSharpPlus is an unofficial Discord API wrapper for .NET, originally forked from DiscordSharp. It's an alternative to Discord.NET, which provides a simples, if less mature, API.",
+                "I have made major updates to the library, both its internals, and the external API. I drastically improved its build/publish pipeline, redesigned its docuemntation, and provided many examples of usage in major .NET languages. I am currently one of top contributors, and I continue to implement fixes and improvements."
+            ],
+            "docs": "https://dsharpplus.github.io/",
+            "source": "https://github.com/DSharpPlus/DSharpPlus/",
+            "otherLinks": []
+        }
+    ],
+    "projects": [
+        {
+            "name": "Discord.NET",
+            "description": [
+                "Discord.NET is an unofficial .NET wrapper of the Discord API, created by RogueException. It is built around the .NET Standard, and thus can run on .NET Framework, .NET Core, or many other .NET plaftorms.",
+                "I made some contributions to the project, among them small bug fixes, or minor API updates."
+            ],
+            "source": "https://github.com/discord-net/Discord.Net",
+            "otherLinks": []
+        },
+        {
+            "name": "Rainbow 6: Strat Roulette",
+            "description": [
+                "I designed, and developed a companion application for Rainbow 6: Siege. The application allows you to randomize various aspects of your gameplay, such as operators or recruits to play, their loadouts, and strategies to follow."
+            ],
+            "source": "https://github.com/Emzi0767/R6-Strat-Roulette",
+            "otherLinks": [
+                {
+                    "name": "Google Play Store",
+                    "url": "https://play.google.com/store/apps/details?id=com.emzi0767.r6stratroulette"
+                }
+            ]
+        },
+        {
+            "name": "Reusable .NET Components",
+            "description": [
+                "A collection of reusable components I use in my various .NET projects."
+            ],
+            "source": "https://github.com/Emzi0767/Common",
+            "otherLinks": []
+        },
+        {
+            "name": "ILAbuse",
+            "description": [
+                "Projects which abuse the .NET's Intermediate Language, to achieve fun, and sometimes ludicrous, results. There's currently not much there, as I haven't had much time to update it."
+            ],
+            "source": "https://github.com/Emzi0767/ILAbuse",
+            "otherLinks": []
+        },
+        {
+            "name": ".NET Operator List",
+            "description": [
+                "A rather satirical project, it's an implementation of a Python-like collection that can be manipulated using standard C# operators, such as +, -, and so on."
+            ],
+            "source": "https://github.com/Emzi0767/DotNet-Operator-List",
+            "otherLinks": []
+        },
+        {
+            "name": "Simplybius",
+            "description": [
+                "A simple Polybius Square encoder, designed to work over Discord Emojis."
+            ],
+            "source": "https://github.com/Emzi0767/Simplybius",
+            "otherLinks": []
+        }
+    ]
+}

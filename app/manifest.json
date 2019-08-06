@@ -2,18 +2,32 @@
     "onPostLoad": "./app/app.post-load.js",
     "onPreLoad": "./app/app.pre-load.js",
     "css": [
-        "./app/app-root/app-root.style.css"
+        "./app/views/app-root/app-root.style.css",
+        "./app/views/projects/projects.style.css",
+        "./app/views/project/project.style.css",
+        "./app/views/discord/discord.style.css"
     ],
     "js": [
         "https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js",
         "https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.min.js",
 
-        "./app/landing/landing.module.js",
-        "./app/app-root/app-root.module.js",
+        "./app/views/landing/landing.module.js",
+        "./app/views/about/about.module.js",
+        "./app/views/projects/projects.module.js",
+        "./app/views/project/project.module.js",
+        "./app/views/discord/discord.module.js",
+        "./app/views/app-root/app-root.module.js",
 
-        "./app/landing/landing.component.js",
-        "./app/app-root/app-root.component.js",
+        "./app/views/landing/landing.component.js",
+        "./app/views/about/about.component.js",
+        "./app/views/projects/projects.component.js",
+        "./app/views/project/project.component.js",
+        "./app/views/discord/discord.component.js",
+        "./app/views/app-root/app-root.component.js",
 
-        "./app/app.js"
+        "./app/app.js",
+
+        "./app/services/tab-tracker.service.js",
+        "./app/services/class-manager.service.js"
     ]
 }
