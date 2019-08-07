@@ -7,6 +7,7 @@
         "projects",
         "project",
         "discord",
+        "discordBot",
         "appRoot"
     ]);
 })();

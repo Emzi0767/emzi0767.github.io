@@ -1,5 +1,5 @@
 <div class="image">
-    <img src="{{ $ctrl.project.image }}" alt="{{ $ctrl.project.name }}" class="project-logo">
+    <img ng-src="{{ $ctrl.project.image }}" alt="{{ $ctrl.project.name }}" class="project-logo">
 </div>
 
 <h1>{{ $ctrl.project.name }}</h1>
@@ -13,7 +13,7 @@
 </p>
 
 <div class="links">
-    <a href="{{ $ctrl.project.source }}" alt="Source code of {{ $ctrl.project.source }}" title="Source code of {{ $ctrl.project.source }}" ng-if="$ctrl.project.source" target="_blank">Source code</a>
-    <a href="{{ $ctrl.project.docs }}" alt="Documentation for {{ $ctrl.project.source }}" title="Documentation for {{ $ctrl.project.source }}" ng-if="$ctrl.project.docs" target="_blank">Documentation</a>
-    <a href="{{ link.url }}" alt="{{ link.name }}" title="{{ link.name }}" ng-repeat="link in $ctrl.project.otherLinks" target="_blank">{{ link.name }}</a>
+    <a ng-href="{{ $ctrl.project.source }}" alt="Source code of {{ $ctrl.project.source }}" title="Source code of {{ $ctrl.project.source }}" ng-if="$ctrl.project.source" target="_blank">Source code</a>
+    <a ng-href="{{ $ctrl.project.docs }}" alt="Documentation for {{ $ctrl.project.source }}" title="Documentation for {{ $ctrl.project.source }}" ng-if="$ctrl.project.docs" target="_blank">Documentation</a>
+    <a ng-href="{{ link.url }}" alt="{{ link.name }}" title="{{ link.name }}" ng-repeat="link in $ctrl.project.otherLinks" target="_blank">{{ link.name }}</a>
 </div>

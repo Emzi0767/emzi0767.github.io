@@ -1,0 +1,28 @@
+<div class="image">
+    <img ng-src="{{ $ctrl.bot.image }}" alt="{{ $ctrl.bot.name }}" class="bot-logo">
+</div>
+
+<h1>{{ $ctrl.bot.name }}</h1>
+
+<p ng-repeat="line in $ctrl.bot.description">
+    {{ line }}
+</p>
+
+<p ng-repeat="line in $ctrl.bot.details">
+    {{ line }}
+</p>
+
+<p>
+    Default prefixes: <span><!--
+    --><ng-repeat ng-repeat="prefix in $ctrl.bot.prefixes"><!--
+        --><span class="mono" ng-if="prefix !== false">{{ prefix == true ? '@' + $ctrl.bot.mention : prefix }}</span><!--
+    --></ng-repeat>.</span> 
+    <span ng-if="$ctrl.bot.help">
+        To invoke help, execute <span class="mono">{{ $ctrl.bot.prefixes[0] === true ? '@' + $ctrl.bot.mention : $ctrl.bot.prefixes[0] }} {{ $ctrl.bot.help }}</span>.
+    </span>
+</p>
+
+<div class="links">
+    <a ng-href="https://discordapp.com/oauth2/authorize?client_id={{ $ctrl.bot.applicationId }}&scope=bot&permissions={{ $ctrl.bot.permissions }}" alt="Add {{ $ctrl.bot.name }} to your server" title="Add {{ $ctrl.bot.name }} to your server" ng-if="$ctrl.bot.applicationId" target="_blank">Add to your server</a>
+    <a ng-href="{{ $ctrl.bot.source }}" alt="Source code of {{ $ctrl.bot.source }}" title="Source code of {{ $ctrl.bot.source }}" ng-if="$ctrl.bot.source" target="_blank">Source code</a>
+</div>

@@ -1,1 +1,37 @@
-Discord
+<h1>Discord</h1>
+<p>
+    I have a personal Discord server. Don't hesitate to join if you have any questions or seek information about any 
+    of my Discord (or otherwise) projects, the invite is below.
+</p>
+<p>
+    Keep in mind that I am based in UTC+1 (or +2 during DST), so you might not get a response when it's middle of the 
+    night in that timezone. Other than that, if you behave like a jackass, expect a swift resolution in form of a ban.
+</p>
+<p>
+    Lastly, my servers offer some emotes to Nitro users. If you join just to take advantage of them, that's fine. 
+</p>
+<p>
+    I also built and operate several bots, you can find out more about them below. If you find them useful, do not 
+    hesitate to add them to your servers.
+</p>
+
+<h2>Server invite</h2>
+<p>
+    <a ng-href="https://discord.gg/{{ $ctrl.guild.invite }}" title="Server invite" alt="Server invite" class="invite-link">
+        <img ng-src="https://discordapp.com/api/guilds/{{ $ctrl.guild.id }}/embed.png?style=banner1" alt="Server invite" class="invite-banner">
+    </a>
+</p>
+
+<h2>Bots</h2>
+<div class="bot" ng-repeat="bot in $ctrl.bots">
+    <img ng-src="{{ bot.image }}" alt="{{ bot.name }}" class="icon">
+    <div class="data">
+        <h2>{{ bot.name }}</h2>
+        <p ng-repeat="line in bot.description">{{ line }}</p>
+
+        <div class="links">
+            <a ng-href="#!/discord/{{ bot.id }}" alt="More infromation about {{ bot.name }}" title="More infromation about {{ bot.name }}">More information</a>
+            <a ng-href="https://discordapp.com/oauth2/authorize?client_id={{ bot.applicationId }}&scope=bot&permissions={{ bot.permissions }}" alt="Add {{ bot.name }} to your server" title="Add {{ bot.name }} to your server" ng-if="bot.applicationId" target="_blank">Add to your server</a>
+        </div>
+    </div>
+</div>

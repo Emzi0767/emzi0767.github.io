@@ -12,6 +12,8 @@
             template: "<project></project>"
         }).when("/discord", {
             template: "<discord></discord>"
+        }).when("/discord/:botId", {
+            template: "<discord-bot></discord-bot>"
         }).otherwise("/");
     }]);
 })();

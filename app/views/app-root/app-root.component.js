@@ -14,7 +14,6 @@
             });
 
             classManager.addUpdateHandler(function(className) {
-                console.log(className);
                 self.rootClassName = className;
             });
         }] 

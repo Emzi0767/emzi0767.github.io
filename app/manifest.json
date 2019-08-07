@@ -5,7 +5,8 @@
         "./app/views/app-root/app-root.style.css",
         "./app/views/projects/projects.style.css",
         "./app/views/project/project.style.css",
-        "./app/views/discord/discord.style.css"
+        "./app/views/discord/discord.style.css",
+        "./app/views/discord-bot/discord-bot.style.css"
     ],
     "js": [
         "https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js",
@@ -16,6 +17,7 @@
         "./app/views/projects/projects.module.js",
         "./app/views/project/project.module.js",
         "./app/views/discord/discord.module.js",
+        "./app/views/discord-bot/discord-bot.module.js",
         "./app/views/app-root/app-root.module.js",
 
         "./app/views/landing/landing.component.js",
@@ -23,6 +25,7 @@
         "./app/views/projects/projects.component.js",
         "./app/views/project/project.component.js",
         "./app/views/discord/discord.component.js",
+        "./app/views/discord-bot/discord-bot.component.js",
         "./app/views/app-root/app-root.component.js",
 
         "./app/app.js",

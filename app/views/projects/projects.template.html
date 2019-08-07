@@ -5,16 +5,16 @@
 
 <h2>Main projects</h2>
 <div class="hero-project" ng-repeat="heroProject in $ctrl.heroProjects">
-    <img src="{{ heroProject.image }}" alt="{{ heroProject.name }}" class="icon">
+    <img ng-src="{{ heroProject.image }}" alt="{{ heroProject.name }}" class="icon">
     <div class="data">
         <h2>{{ heroProject.name }}</h2>
         <p ng-repeat="line in heroProject.description">{{ line }}</p>
 
         <div class="links">
-            <a href="#!/projects/{{ heroProject.id }}" alt="More infromation about {{ heroProject.name }}" title="More infromation about {{ heroProject.name }}">More information</a>
-            <a href="{{ heroProject.source }}" alt="Source code of {{ heroProject.source }}" title="Source code of {{ heroProject.source }}" ng-if="heroProject.source" target="_blank">Source code</a>
-            <a href="{{ heroProject.docs }}" alt="Documentation for {{ heroProject.source }}" title="Documentation for {{ heroProject.source }}" ng-if="heroProject.docs" target="_blank">Documentation</a>
-            <a href="{{ link.url }}" alt="{{ link.name }}" title="{{ link.name }}" ng-repeat="link in heroProject.otherLinks" target="_blank">{{ link.name }}</a>
+            <a ng-href="#!/projects/{{ heroProject.id }}" alt="More infromation about {{ heroProject.name }}" title="More infromation about {{ heroProject.name }}">More information</a>
+            <a ng-href="{{ heroProject.source }}" alt="Source code of {{ heroProject.source }}" title="Source code of {{ heroProject.source }}" ng-if="heroProject.source" target="_blank">Source code</a>
+            <a ng-href="{{ heroProject.docs }}" alt="Documentation for {{ heroProject.source }}" title="Documentation for {{ heroProject.source }}" ng-if="heroProject.docs" target="_blank">Documentation</a>
+            <a ng-href="{{ link.url }}" alt="{{ link.name }}" title="{{ link.name }}" ng-repeat="link in heroProject.otherLinks" target="_blank">{{ link.name }}</a>
         </div>
     </div>
 </div>
@@ -25,8 +25,8 @@
         <h2>{{ project.name }}</h2>
 
         <div class="links">
-            <a href="{{ project.source }}" alt="Source code of {{ project.source }}" title="Source code of {{ project.source }}" ng-if="project.source" target="_blank">Source code</a>
-            <a href="{{ link.url }}" alt="{{ link.name }}" title="{{ link.name }}" ng-repeat="link in project.otherLinks" target="_blank">{{ link.name }}</a>
+            <a ng-href="{{ project.source }}" alt="Source code of {{ project.source }}" title="Source code of {{ project.source }}" ng-if="project.source" target="_blank">Source code</a>
+            <a ng-href="{{ link.url }}" alt="{{ link.name }}" title="{{ link.name }}" ng-repeat="link in project.otherLinks" target="_blank">{{ link.name }}</a>
         </div>
 
         <p ng-repeat="line in project.description">{{ line }}</p>

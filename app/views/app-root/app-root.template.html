@@ -5,16 +5,16 @@
             Emzi's Personal Website
         </div>
         <div class="nav-block">
-            <a href="#!/" title="Landing page" alt="Landing page" class="{{ $ctrl.tabId === 'landing' ? 'current' : '' }}">Landing</a><!-- 
-            --><a href="#!/projects" title="Projects" alt="Projects" class="{{ $ctrl.tabId === 'projects' ? 'current' : '' }}">Projects</a><!-- 
-            --><a href="#!/discord" title="Discord bots" alt="Discord bots" class="{{ $ctrl.tabId === 'discord' ? 'current' : '' }}">Discord</a><!-- 
-            --><a href="#!/about" title="About me" alt="About me" class="{{ $ctrl.tabId === 'about' ? 'current' : '' }}">About me</a>
+            <a href="#!/" title="Landing page" alt="Landing page" ng-class="$ctrl.tabId === 'landing' ? 'current' : ''">Landing</a><!-- 
+            --><a href="#!/projects" title="Projects" alt="Projects" ng-class="$ctrl.tabId === 'projects' ? 'current' : ''">Projects</a><!-- 
+            --><a href="#!/discord" title="Discord bots" alt="Discord bots" ng-class="$ctrl.tabId === 'discord' ? 'current' : ''">Discord</a><!-- 
+            --><a href="#!/about" title="About me" alt="About me" ng-class="$ctrl.tabId === 'about' ? 'current' : ''">About me</a>
         </div>
     </div>
 </div>
 
 <div class="root-content">
-    <div class="inner {{ $ctrl.rootClassName }}" ng-view></div>
+    <div class="inner" ng-class="$ctrl.rootClassName" ng-view></div>
 </div>
 
 <div class="root-footer">
