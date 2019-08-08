@@ -5,6 +5,7 @@
             $rootScope.loadedClass = "loaded";
 
             let self = this;
+
             $http.get("./assets/crypto.json").then(function(response) {
                 self.crypto = response.data;
             });

@@ -109,3 +109,42 @@
 .project > .data > .links > a:active {
     background: #3d3d3d;
 }
+
+@media (max-width: 1024px) {
+    .hero-project {
+        display: block;
+    }
+
+    .hero-project > .icon {
+        width: 100%;
+        max-width: 192px;
+        margin: 0 auto;
+    }
+
+    .hero-project > .data > h2 {
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    .project {
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+        padding: 0 !important;
+    }
+
+    .hero-project > .data > p,
+    .project > .data > p {
+        text-align-last: center;
+    }
+}
+
+@media (max-width: 639px) {
+    .hero-project > .data > .links {
+        display: block;
+    }
+
+    .hero-project > .data > .links > a {
+        margin: 6px 0;
+    }
+}

@@ -65,3 +65,35 @@
 p > a.invite-link {
     border-bottom: none !important;
 }
+
+@media (max-width: 1024px) {
+    .bot {
+        display: block;
+    }
+
+    .bot > .icon {
+        width: 100%;
+        max-width: 192px;
+        margin: 0 auto;
+    }
+
+    .bot > .data > h2 {
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    .bot > .data > p {
+        text-align-last: center;
+    }
+}
+
+@media (max-width: 639px) {
+    .bot > .data > .links {
+        display: block;
+    }
+
+    .bot > .data > .links > a {
+        margin: 6px 0;
+    }
+}
+

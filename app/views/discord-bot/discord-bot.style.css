@@ -67,3 +67,22 @@ span.mono {
     font-family: 'Noto Sans','Helvetica','Arial',sans-serif;
     background: #333;
 }
+
+@media (max-width: 1024px) {
+    .discord-bot-view > .ng-scope > div.image > img.bot-logo {
+        display: block;
+        width: 100%; height: auto;
+        max-width: 384px;
+    }
+
+    .discord-bot-view > .ng-scope > .links {
+        display: block;
+        min-width: 240px;
+        max-width: 400px;
+    }
+
+    .discord-bot-view > .ng-scope > .links > a {
+        margin: 6px 0;
+    }
+}
+

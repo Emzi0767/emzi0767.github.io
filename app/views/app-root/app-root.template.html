@@ -2,8 +2,12 @@
     <div class="inner">
         <div class="title-block">
             <img src="assets/og-image.jpg" alt="Emzi's Personal Website" class="title-image">
-            Emzi's Personal Website
+            <span>Emzi's Personal Website</span>
         </div>
+
+        <input type="checkbox" id="menu-collapser" class="menu-collapser collapser-component">
+        <label for="menu-collapser" class="menu-collapser-label collapser-component">Menu</label>
+        
         <div class="nav-block">
             <a href="#!/" title="Landing page" alt="Landing page" ng-class="$ctrl.tabId === 'landing' ? 'current' : ''">Landing</a><!-- 
             --><a href="#!/projects" title="Projects" alt="Projects" ng-class="$ctrl.tabId === 'projects' ? 'current' : ''">Projects</a><!-- 

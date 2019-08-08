@@ -26,7 +26,8 @@ app-root {
     display: table;
 }
 
-app-root > div.loading {
+app-root > div.loading,
+app-root > div.loading.small-screen {
     width: 100%; height: 100%;
     margin: 0; padding: 0;
 
@@ -37,4 +38,45 @@ app-root > div.loading {
     
     font-size: 72pt;
     font-weight: 700;
+}
+
+app-root > div.loading.small-screen {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    app-root > div.loading {
+        display: none;
+    }
+
+    app-root > div.loading.small-screen {
+        display: table-cell;
+        animation: spin-hourglass 5s infinite;
+    }
+}
+
+@keyframes spin-hourglass {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(180deg);
+    }
+
+    70% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }

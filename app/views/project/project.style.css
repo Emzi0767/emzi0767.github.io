@@ -56,3 +56,21 @@
 .project-view > .ng-scope > .links > a:active {
     background: #3d3d3d;
 }
+
+@media (max-width: 1024px) {
+    .project-view > .ng-scope > div.image > img.project-logo {
+        display: block;
+        width: 100%; height: auto;
+        max-width: 256px;
+    }
+
+    .project-view > .ng-scope > .links {
+        display: block;
+        min-width: 240px;
+        max-width: 400px;
+    }
+
+    .project-view > .ng-scope > .links > a {
+        margin: 6px 0;
+    }
+}
