@@ -1,3 +1,5 @@
-#Emzi0767's GitHub page
+# Emzi0767's GitHub page
 
-This is just my personal GitHub page, where I list things I do.
+This page redirects to my [portfolio hub][0].
+
+[0]: https://emzi0767.dev/
